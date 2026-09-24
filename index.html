@@ -1,4 +1,12 @@
-<p>Pharmacy & Medical Emergencies — English for Travelers</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pharmacy &amp; Medical Emergencies — English for Travelers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Fira+Code&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #FAFAF7;
@@ -69,7 +77,7 @@
     position: absolute;
     inset: 0;
     opacity: 0.35;
-    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='<a href="http://www.w3.org/2000/svg" class="redactor-autoparser-object">http://www.w3.org/2000/svg</a>'%3E%3Cpath d='M20 18h2v4h-2zM18 20v-2h4v2z' fill='%232B9A7E' fill-opacity='0.06'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 18h2v4h-2zM18 20v-2h4v2z' fill='%232B9A7E' fill-opacity='0.06'/%3E%3C/svg%3E");
     z-index: 1;
   }
 
@@ -501,28 +509,28 @@
     background: linear-gradient(135deg, var(--plum-bg), var(--bg));
     border-color: rgba(107,58,107,0.12);
   }
-  .block.cultural::before { content: '🌍'; background: var(--bg); }
+  .block.cultural::before { content: none; }
   .block.cultural h4 { color: var(--plum); }
 
   .block.tip {
     background: linear-gradient(135deg, var(--teal-bg), var(--bg));
     border-color: rgba(26,107,90,0.15);
   }
-  .block.tip::before { content: '💡'; background: var(--bg); }
+  .block.tip::before { content: none; }
   .block.tip h4 { color: var(--teal); }
 
   .block.alert {
     background: linear-gradient(135deg, var(--coral-bg), var(--bg));
     border-color: rgba(192,57,43,0.15);
   }
-  .block.alert::before { content: '🚨'; background: var(--bg); }
+  .block.alert::before { content: none; }
   .block.alert h4 { color: var(--coral); }
 
   .block.warning {
     background: linear-gradient(135deg, var(--amber-bg), var(--bg));
     border-color: rgba(184,134,11,0.15);
   }
-  .block.warning::before { content: '⚠️'; background: var(--bg); }
+  .block.warning::before { content: none; }
   .block.warning h4 { color: var(--amber); }
 
   /* ══════════ BODY DIAGRAM ══════════ */
@@ -570,7 +578,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='<a href="http://www.w3.org/2000/svg" class="redactor-autoparser-object">http://www.w3.org/2000/svg</a>'%3E%3Cpath d='M10 8h-1v4h1zm-1 0V7h2v1z' fill='%23C0392B' fill-opacity='0.08'/%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 8h-1v4h1zm-1 0V7h2v1z' fill='%23C0392B' fill-opacity='0.08'/%3E%3C/svg%3E");
   }
   .emergency-banner .content { position: relative; z-index: 1; }
   .emergency-banner h3 {
@@ -643,12 +651,28 @@
   /* ══════════ ANIMATIONS ══════════ */
   .fi { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
   .fi.v { opacity: 1; transform: translateY(0); }
+
+/* hero: same sizes and spacing as the reference module */
+.hero-badge{font-size:.67rem;letter-spacing:.28em;padding:.45rem 1.4rem;margin-bottom:2rem}
+.hero h1{font-size:clamp(2.5rem,5.5vw,4.6rem);line-height:1.12}
+.hero-line{width:50px;margin:2rem auto}
+.hero-sub{font-size:1.15rem;max-width:540px}
+.hero-scroll{margin-top:3.5rem;gap:.4rem;font-size:.62rem;letter-spacing:.2em}
+
+/* ═══ STANDARD FOOTER — identical on every Viaje Bem module ═══ */
+footer.footer{text-align:center;padding:3.5rem 2rem;border-top:1px solid #ECEEF4;margin-top:3rem;line-height:1.75}
+footer.footer .footer-b{font-family:'Bodoni Moda',Georgia,serif;font-size:1.25rem;font-weight:400;color:#141B2D;margin-bottom:.35rem}
+footer.footer .footer-t{font-family:'Nunito Sans',sans-serif;font-size:.76rem;color:#7A8299;line-height:1.75}
+footer.footer .sig{display:flex;flex-direction:column;align-items:center;gap:1.1rem;margin-top:2.2rem;padding-top:2rem;border-top:1px solid #ECEEF4}
+footer.footer .sig-n{font-family:'Bodoni Moda',Georgia,serif;font-size:1.05rem;font-weight:400;color:#141B2D}
+footer.footer .sig-r{font-family:'Nunito Sans',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#C9A84C;margin-top:.15rem}
 </style>
+</head>
+<body>
 <!-- ════════════════ HERO ════════════════ -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-icon">✚</div>
-    <div class="hero-badge">English for Travelers — Módulo Essencial</div>
+        <div class="hero-badge">English for Travelers — Módulo Essencial</div>
     <h1>Pharmacy &<br><em>Medical Emergencies</em></h1>
     <div class="hero-line"></div>
     <p class="hero-sub">
@@ -685,80 +709,14 @@
   </div>
 </nav>
 <!-- ════════════════ MAIN ════════════════ -->
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p><main class="main"><p></p>
-<!-- ██████ SEÇÃO 1 ██████ -->
+<main class="main"><!-- ██████ SEÇÃO 1 ██████ -->
 <section class="section" id="s1">
   <div class="section-tag green"><span class="n">1</span> Getting Oriented</div>
   <h2>Entendendo a Farmácia no Exterior</h2>
   <p class="section-sub">Como funciona, onde encontrar e o que esperar — antes de pedir qualquer coisa.</p>
 
   <p class="section-intro">
-    A farmácia no exterior é bastante diferente da brasileira. Nos Estados Unidos, as grandes redes como CVS, Walgreens e Rite Aid vendem de tudo — de remédios a chocolates e produtos de beleza. A parte farmacêutica fica no fundo da loja, com um balcão chamado <strong>pharmacy counter</strong>. Na Europa, as farmácias são mais tradicionais e identificadas pela cruz verde. Saber como funcionam é o primeiro passo.
+    A farmácia no exterior é bastante diferente da brasileira. Nos Estados Unidos, as grandes redes como CVS e Walgreens vendem de tudo — de remédios a chocolates e produtos de beleza. A parte farmacêutica fica no fundo da loja, com um balcão chamado <strong>pharmacy counter</strong>. Na Europa, as farmácias são mais tradicionais e identificadas pela cruz verde. Saber como funcionam é o primeiro passo.
   </p>
 
   <div class="group">
@@ -832,22 +790,22 @@
   </div>
 
   <div class="body-vocab-section">
-    <div class="body-item"><span class="emoji">🧠</span><div class="text"><div class="en">head</div><div class="pt">cabeça</div></div></div>
-    <div class="body-item"><span class="emoji">👁</span><div class="text"><div class="en">eye / eyes</div><div class="pt">olho / olhos</div></div></div>
-    <div class="body-item"><span class="emoji">👂</span><div class="text"><div class="en">ear / ears</div><div class="pt">ouvido / ouvidos</div></div></div>
-    <div class="body-item"><span class="emoji">👃</span><div class="text"><div class="en">nose</div><div class="pt">nariz</div></div></div>
-    <div class="body-item"><span class="emoji">👄</span><div class="text"><div class="en">mouth / throat</div><div class="pt">boca / garganta</div></div></div>
-    <div class="body-item"><span class="emoji">🦷</span><div class="text"><div class="en">tooth / teeth</div><div class="pt">dente / dentes</div></div></div>
-    <div class="body-item"><span class="emoji">🫁</span><div class="text"><div class="en">chest / lungs</div><div class="pt">peito / pulmões</div></div></div>
-    <div class="body-item"><span class="emoji">💪</span><div class="text"><div class="en">arm / shoulder</div><div class="pt">braço / ombro</div></div></div>
-    <div class="body-item"><span class="emoji">🤚</span><div class="text"><div class="en">hand / wrist / fingers</div><div class="pt">mão / pulso / dedos</div></div></div>
-    <div class="body-item"><span class="emoji">🫃</span><div class="text"><div class="en">stomach / abdomen</div><div class="pt">estômago / abdômen</div></div></div>
-    <div class="body-item"><span class="emoji">🦵</span><div class="text"><div class="en">leg / knee / ankle</div><div class="pt">perna / joelho / tornozelo</div></div></div>
-    <div class="body-item"><span class="emoji">🦶</span><div class="text"><div class="en">foot / toe</div><div class="pt">pé / dedo do pé</div></div></div>
-    <div class="body-item"><span class="emoji">🔙</span><div class="text"><div class="en">back / lower back</div><div class="pt">costas / lombar</div></div></div>
-    <div class="body-item"><span class="emoji">🦴</span><div class="text"><div class="en">neck / spine</div><div class="pt">pescoço / coluna</div></div></div>
-    <div class="body-item"><span class="emoji">🩸</span><div class="text"><div class="en">skin / blood</div><div class="pt">pele / sangue</div></div></div>
-    <div class="body-item"><span class="emoji">🫀</span><div class="text"><div class="en">heart</div><div class="pt">coração</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">head</div><div class="pt">cabeça</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">eye / eyes</div><div class="pt">olho / olhos</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">ear / ears</div><div class="pt">ouvido / ouvidos</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">nose</div><div class="pt">nariz</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">mouth / throat</div><div class="pt">boca / garganta</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">tooth / teeth</div><div class="pt">dente / dentes</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">chest / lungs</div><div class="pt">peito / pulmões</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">arm / shoulder</div><div class="pt">braço / ombro</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">hand / wrist / fingers</div><div class="pt">mão / pulso / dedos</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">stomach / abdomen</div><div class="pt">estômago / abdômen</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">leg / knee / ankle</div><div class="pt">perna / joelho / tornozelo</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">foot / toe</div><div class="pt">pé / dedo do pé</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">back / lower back</div><div class="pt">costas / lombar</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">neck / spine</div><div class="pt">pescoço / coluna</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">skin / blood</div><div class="pt">pele / sangue</div></div></div>
+    <div class="body-item"><div class="text"><div class="en">heart</div><div class="pt">coração</div></div></div>
   </div>
 
   <div class="group">
@@ -902,7 +860,7 @@
     <div class="vocab-item"><div class="en">sore throat</div><div class="pt">dor de garganta</div></div>
     <div class="vocab-item"><div class="en">headache / migraine</div><div class="pt">dor de cabeça / enxaqueca</div></div>
     <div class="vocab-item"><div class="en">nausea / vomiting</div><div class="pt">náusea / vômito</div></div>
-    <div class="vocab-item"><div class="en">diarrhea / constipation</div><div class="pt">diarreia / constipação</div></div>
+    <div class="vocab-item"><div class="en">diarrhea / constipation</div><div class="pt">diarreia / prisão de ventre</div></div>
     <div class="vocab-item"><div class="en">swelling / swollen</div><div class="pt">inchaço / inchado</div></div>
     <div class="vocab-item"><div class="en">rash / hives</div><div class="pt">erupção / urticária</div></div>
     <div class="vocab-item"><div class="en">bleeding</div><div class="pt">sangramento</div></div>
@@ -1021,8 +979,8 @@
     <div class="line">
       <div class="avatar them">PH</div>
       <div class="bubble">
-        <div class="en">In that case, I'd recommend acetaminophen — Tylenol. Ibuprofen can sometimes interact with blood pressure meds. Take two tablets every six hours, no more than eight in twenty-four hours.</div>
-        <div class="pt">Nesse caso, recomendo paracetamol — Tylenol. Ibuprofeno às vezes interage com remédios de pressão. Tome dois comprimidos a cada seis horas, no máximo oito em vinte e quatro horas.</div>
+        <div class="en">In that case, I'd recommend acetaminophen — Tylenol. Ibuprofen can sometimes interact with blood pressure meds. Take two tablets every six hours, no more than six in twenty-four hours.</div>
+        <div class="pt">Nesse caso, recomendo paracetamol — Tylenol. Ibuprofeno às vezes interage com remédios de pressão. Tome dois comprimidos a cada seis horas, no máximo seis em vinte e quatro horas.</div>
       </div>
     </div>
     <div class="line">
@@ -1087,7 +1045,7 @@
 
   <div class="block warning">
     <h4>Atenção Importante</h4>
-    <p>Alguns medicamentos que são vendidos <strong>sem receita</strong> no Brasil exigem <strong>receita</strong> nos EUA e na Europa (e vice-versa). Exemplos: antibióticos, certos antialérgicos, relaxantes musculares, e muitos anti-inflamatórios mais fortes. Sempre verifique antes de viajar se os seus remédios habituais requerem receita no destino. Leve sempre a receita original + uma cópia em inglês, de preferência com o nome genérico (princípio ativo) do medicamento.</p>
+    <p>Alguns medicamentos que são vendidos <strong>sem receita</strong> no Brasil exigem <strong>receita</strong> nos EUA e na Europa (e vice-versa). Exemplos: certos antialérgicos, relaxantes musculares, e muitos anti-inflamatórios mais fortes. Sempre verifique antes de viajar se os seus remédios habituais requerem receita no destino. Leve sempre a receita original + uma cópia em inglês, de preferência com o nome genérico (princípio ativo) do medicamento.</p>
   </div>
 </section>
 <div class="sep"><span class="dot"></span></div>
@@ -1147,7 +1105,7 @@
     <div class="card">
       <div class="en">"I have asthma. I need to buy an inhaler."</div>
       <div class="pt">Tenho asma. Preciso comprar uma bombinha.</div>
-      <div class="note green"><strong>Inhaler</strong> = bombinha de asma. <strong>"Puffer"</strong> também é usado informalmente.</div>
+      <div class="note green"><strong>Inhaler</strong> = bombinha de asma.</div>
     </div>
 
     <div class="card">
@@ -1248,7 +1206,7 @@
 
     <div class="card">
       <div class="en">"Where are the feminine hygiene products? I need pads / tampons."</div>
-      <div class="pt">Onde ficam os produtos de higiene feminina? Preciso de absorventes / tampões.</div>
+      <div class="pt">Onde ficam os produtos de higiene feminina? Preciso de absorventes / absorventes internos.</div>
     </div>
   </div>
 </section>
@@ -1387,7 +1345,7 @@
 
     <div class="card">
       <div class="en">"I've been constipated for three days."</div>
-      <div class="pt">Estou constipado(a) há três dias.</div>
+      <div class="pt">Estou com prisão de ventre há três dias.</div>
       <div class="note amber">Cuidado: <strong>"constipated"</strong> em inglês = intestino preso. NÃO significa resfriado (como em português). Esse é um erro clássico de brasileiros.</div>
     </div>
 
@@ -1553,7 +1511,7 @@
 
     <div class="card">
       <div class="en">"I have a cold sore on my lip. Do you have antiviral cream?"</div>
-      <div class="pt">Tenho uma herpes labial. Vocês têm creme antiviral?</div>
+      <div class="pt">Estou com herpes labial. Vocês têm creme antiviral?</div>
       <div class="note green"><strong>Canker sore</strong> = afta (dentro da boca). <strong>Cold sore</strong> = herpes labial (no lábio). São coisas diferentes — não confunda.</div>
     </div>
 
@@ -1840,7 +1798,7 @@
     <div class="card">
       <div class="en">"I need to go to the emergency room right now."</div>
       <div class="pt">Preciso ir ao pronto-socorro agora.</div>
-      <div class="note green"><strong>Emergency room (ER)</strong> ou <strong>emergency department (ED)</strong> = pronto-socorro. <strong>A&E (Accident & Emergency)</strong> no Reino Unido.</div>
+      <div class="note green"><strong>Emergency room (ER)</strong> ou <strong>emergency department (ED)</strong> = pronto-socorro.</div>
     </div>
 
     <div class="card">
@@ -2141,7 +2099,7 @@
   </div>
 
   <div class="vocab">
-    <div class="vocab-item"><div class="en">copay / co-payment</div><div class="pt">co-participação</div></div>
+    <div class="vocab-item"><div class="en">copay / co-payment</div><div class="pt">coparticipação</div></div>
     <div class="vocab-item"><div class="en">deductible</div><div class="pt">franquia</div></div>
     <div class="vocab-item"><div class="en">coverage</div><div class="pt">cobertura</div></div>
     <div class="vocab-item"><div class="en">claim / file a claim</div><div class="pt">pedido / abrir um pedido de reembolso</div></div>
@@ -2159,142 +2117,14 @@
 <!-- ════════════════ FOOTER ════════════════ -->
 <div class="sep"><span class="dot"></span></div>
 <footer class="footer">
-  <div class="footer-brand">Pharmacy & Medical Emergencies — English for Travelers</div>
-  <p class="footer-text">
-    Conteúdo exclusivo para fins educacionais.<br>
-    Desenvolvido com excelência para alunos que buscam comunicação internacional de alto nível.
-  </p>
+  <div class="footer-b">Pharmacy &amp; Medical Emergencies — English for Travelers</div>
+  <p class="footer-t">Conteúdo exclusivo para fins educacionais.<br>Desenvolvido com excelência para alunos que buscam comunicação internacional de alto nível.</p>
+  <div class="sig">
+    <div><div class="sig-n">Thaiana Faria</div><div class="sig-r">Especialista em Inglês Médico e Comunicação Científica · MD Talk</div></div>
+    <div><div class="sig-n">Thiago Faria</div><div class="sig-r">Produção de Conteúdo Técnico · The Engine Lab</div></div>
+  </div>
 </footer>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p></main>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+</main>
 <!-- ════════════════ JS ════════════════ -->
+</body>
+</html>
